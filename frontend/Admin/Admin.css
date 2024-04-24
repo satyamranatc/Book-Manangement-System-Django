@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background-color: rgb(13, 38, 44);
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: whitesmoke;
+    font-family: sans-serif;
+    height: 50px;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+
+
+nav ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav ul li a:hover
+{
+    color: rgb(255, 153, 0);
+}
+
+
+main
+{
+    min-height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Center the main container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form container */
+#MainForm {
+    width: 400px;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff025f;
+}
+
+
+
+
+@media screen and (max-width: 768px)
+{
+    nav 
+    {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 468px)
+{
+    nav ul
+    {
+        row-gap: 1rem;
+        flex-direction: column;
+    }
+}
+
